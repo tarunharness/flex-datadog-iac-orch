@@ -84,7 +84,8 @@ def write_module_meta(module_dir: Path) -> None:
         "\n".join(
             [
                 "terraform {",
-                "  required_version = \">= 1.6.0\"",
+                "  # terraform_data requires Terraform/OpenTofu 1.4+.",
+                "  required_version = \">= 1.4.0\"",
                 "}",
                 "",
             ]
@@ -261,7 +262,8 @@ def main() -> None:
         "\n".join(
             [
                 "terraform {",
-                "  required_version = \">= 1.6.0\"",
+                "  # terraform_data requires Terraform/OpenTofu 1.4+.",
+                "  required_version = \">= 1.4.0\"",
                 "}",
                 "",
             ]
