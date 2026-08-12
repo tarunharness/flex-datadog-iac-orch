@@ -1,0 +1,43 @@
+output "root_modules" {
+  description = "Top-level module names reconstructed from the plan log."
+  value = [
+    "dashboards",
+    "fia-cluster-tests-prod-us-east-1",
+    "fia-cluster-tests-stage-us-east-1",
+    "flex-orch-cluster-tests-prod-us-east-1",
+    "flex-orch-cluster-tests-stage-us-east-1",
+    "flex-orch-jailbreak-tests-stage-us-east-1",
+    "flex-orch-sixsigma-tests-prod-us-east-1",
+    "flex-orch-sixsigma-tests-stage-us-east-1",
+    "flex_channel_janitor_cluster_tests_stage_us_east_1",
+    "flex_channel_orch_cluster_tests_stage_us_east_1",
+    "fo-fia-ddb-tests-stage-us-east-1",
+    "moc-cluster-tests-prod-us-east-1",
+    "moc-cluster-tests-stage-us-east-1",
+    "monitors_dev-us1",
+    "monitors_ie1",
+    "monitors_prod",
+    "monitors_prod_only",
+    "monitors_stage-au1",
+    "monitors_stage-us1",
+    "monitors_stage_only",
+    "monitors_stage_us1",
+    "monitors_us1",
+    "msg-orch-cluster-tests-prod-us-east-1",
+    "msg-orch-cluster-tests-stage-us-east-1",
+    "msg-orch-jailbreak-tests-prod-us-east-1",
+    "msg-orch-jailbreak-tests-stage-us-east-1",
+    "msg-orch-sixsigma-tests-stage-us-east-1",
+    "orch-e2e-client-otk-tests-stage-us-east-1",
+    "orch-e2e-sip-otk-tests-stage-us-east-1",
+    "orch-e2e-voice-otk-tests-prod-eu-west-1",
+    "orch-e2e-voice-otk-tests-prod-us-east-1",
+    "orch-e2e-voice-otk-tests-stage-au1",
+    "orch-e2e-voice-otk-tests-stage-us-east-1",
+  ]
+}
+
+output "resource_count" {
+  description = "Total resources observed in the plan refresh output."
+  value       = 810
+}

@@ -1,0 +1,20 @@
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfplan.*
+tfplan
+plan.out
+plan.json
+crash.log
+.terraformrc
+terraform.rc
+
+.DS_Store
+*.env
+.env
+.env.*
+
+# Local credentials for Datadog provider smoke tests
+secrets.auto.tfvars
