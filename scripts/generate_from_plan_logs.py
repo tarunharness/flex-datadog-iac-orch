@@ -25,10 +25,10 @@ GENERATED = REPO / "generated"
 # data reliably grows it. Each resource embeds `PADDING_CHUNKS` attributes, each
 # holding `PADDING_CHUNK_BYTES` of base64-encoded random data. Override via env
 # vars PADDING_CHUNKS / PADDING_CHUNK_BYTES to retune the target plan size.
-# Defaults calibrated so a full generate + `terraform plan` produces a ~20MB
-# tfplan file (810 resources * 4 * 2950 bytes of random data).
+# Defaults calibrated so a full generate + `terraform plan` produces a ~40MB
+# tfplan file (810 resources * 4 * 6125 bytes of random data).
 PADDING_CHUNKS = int(os.environ.get("PADDING_CHUNKS", "4"))
-PADDING_CHUNK_BYTES = int(os.environ.get("PADDING_CHUNK_BYTES", "2950"))
+PADDING_CHUNK_BYTES = int(os.environ.get("PADDING_CHUNK_BYTES", "6125"))
 
 
 def random_payload(num_bytes: int) -> str:
