@@ -1,6 +1,6 @@
 output "resource_units" {
   description = "Number of mixed-resource units generated."
-  value       = 580
+  value       = 870
 }
 
 output "resources_per_unit" {
@@ -10,5 +10,5 @@ output "resources_per_unit" {
 
 output "total_resources" {
   description = "Total resources this configuration plans to create."
-  value       = 6960
+  value       = 10440
 }
