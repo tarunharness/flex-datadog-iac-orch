@@ -43,9 +43,9 @@ REPO = Path(__file__).resolve().parents[1]
 GENERATED = REPO / "scaled"
 
 # Number of resource units to emit. Each unit = 12 resources of mixed types.
-# Default 290 units (~3,480 resources) targets a ~20MB plan file; bump the count
+# Default 580 units (~6,960 resources) targets a ~40MB plan file; bump the count
 # (not the fingerprint) to grow the plan via MORE resources.
-RESOURCE_UNITS = int(os.environ.get("RESOURCE_UNITS", "290"))
+RESOURCE_UNITS = int(os.environ.get("RESOURCE_UNITS", "580"))
 
 # How many units to place per .tf file (keeps individual files reasonable).
 UNITS_PER_FILE = int(os.environ.get("UNITS_PER_FILE", "50"))
