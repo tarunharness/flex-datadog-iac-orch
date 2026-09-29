@@ -28,7 +28,7 @@ GENERATED = REPO / "generated"
 # Defaults calibrated so a full generate + `terraform plan` produces a ~100MB
 # tfplan file (810 resources * 4 * 15850 bytes of random data).
 PADDING_CHUNKS = int(os.environ.get("PADDING_CHUNKS", "4"))
-PADDING_CHUNK_BYTES = int(os.environ.get("PADDING_CHUNK_BYTES", "15850"))
+PADDING_CHUNK_BYTES = int(os.environ.get("PADDING_CHUNK_BYTES", "23891"))
 
 
 def random_payload(num_bytes: int) -> str:
