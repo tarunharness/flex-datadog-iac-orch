@@ -1,9 +1,9 @@
 PLAN_LOG ?= artifacts/plan.log
 INVENTORY ?= inventory/plan_refresh_resources.json
 
-# Plan-size tuning (see scripts/generate_from_plan_logs.py). Defaults target ~150MB.
+# Plan-size tuning (see scripts/generate_from_plan_logs.py). Defaults target ~200MB.
 PADDING_CHUNKS ?= 4
-PADDING_CHUNK_BYTES ?= 23891
+PADDING_CHUNK_BYTES ?= 31955
 export PADDING_CHUNKS
 export PADDING_CHUNK_BYTES
 
